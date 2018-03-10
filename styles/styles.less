@@ -1,0 +1,32 @@
+@color1: #123455;
+@font: helvetica;
+
+div.col-xs-6.p-tag{
+    color:magenta;
+}
+
+.p-tag {
+    color: peru;
+}
+
+p {
+
+}
+some-class {
+    color: @color1;
+    font-family: @font
+
+}
+
+.bigger-class {
+    .some-class;
+    margin-top: 5px;
+}
+
+// Nest Tags
+div.col-xs-6{
+    .bigger-class;
+    p.ptag{
+
+    }
+}
